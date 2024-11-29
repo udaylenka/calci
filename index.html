@@ -1,0 +1,65 @@
+<!--Font & color picker HTML-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Calculator</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="icon" href="imgs\calc.jpg">
+		<link rel="stylesheet" href="Calculator.css"/>
+	</head>
+	<body>
+		<center>
+			<div class="cover">
+				<div class="icons">
+					<div class="left">
+						<div>&nbsp &nbsp &nbsp &nbsp </div>
+						<div id="time"></div>
+						<div><img src="imgs\location.png"></div>
+					</div>
+						
+					<div ><h5 id="cam"> &nbsp</h5></div>
+					
+					<div class="right">
+						<div><img src="imgs\signal.png"></div>
+						<div><img src="imgs\wifi.png"></div>
+						<div><img src="imgs\battery.png"></div>
+						<div>&nbsp &nbsp &nbsp &nbsp </div>
+					</div>
+				</div>
+				
+				<div id="screen">
+					<input disabled id="res" maxlength="11"></input>
+				</div>
+				
+				<div id="buttons">
+					<button onclick="cclear()" class="ss"> AC </button>
+					<button onclick="del()" class="ss" ><img src="imgs\back.png" style="height:20px;width:30px;"></button>
+					<button onclick="adda('%')" class="ss">%</button>
+					<button onclick="adda('/' )" class="op">/</button>
+					<button onclick="adda(7)">7</button>
+					<button onclick="adda(8)">8</button>
+					<button onclick="adda(9)">9</button>
+					<button onclick="adda('*')" class="op">x</button>
+					<button onclick="adda(4)">4</button>
+					<button onclick="adda(5)">5</button>
+					<button onclick="adda(6)">6</button>
+					<button onclick="adda('-')" class="op">-</button>
+					<button onclick="adda(1)">1</button>
+					<button onclick="adda(2)">2</button>
+					<button onclick="adda(3)">3</button>
+					<button onclick="adda('+')" class="op">+</button>
+					<button onclick="adda('.')" >.</button>
+					<button onclick="adda(0)">0</button>
+					<button onclick="trag()" >+/-</button>
+					<button onclick="calc()" class="op">=</button>
+				</div>
+				
+				
+				<hr>
+				
+			</div>
+		</center>
+	</body>
+	<script src="Calculator.js"></script>
+</html>
